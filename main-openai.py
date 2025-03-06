@@ -93,8 +93,13 @@ def process_with_openai(text_content: str, output_dir: Path, pdf_name: str,
             response_format={
                 "type": "text"
             },
-            reasoning_effort="low"
-        )
+            temperature=0.5,
+            max_completion_tokens=2000,
+            top_p=1,
+            frequency_penalty=0,
+            presence_penalty=0
+)
+        
 
         # Extract the text from the response
         full_response = response.choices[0].message.content
