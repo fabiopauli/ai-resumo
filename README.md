@@ -33,8 +33,8 @@ Este projeto possui duas versões principais:
 
 1. Clone este repositório:
    ```
-   git clone <url-do-repositório>
-   cd <diretório-do-repositório>
+   git clone https://github.com/fabiopauli/ai-resumo.git
+   cd ai-resumo
    ```
 
 2. Instale os pacotes necessários:
