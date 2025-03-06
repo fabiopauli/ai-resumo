@@ -78,7 +78,7 @@ def process_with_openai(text_content: str, output_dir: Path, pdf_name: str,
         print(f"\n{'='*80}\nStage 1: Generating initial response with OpenAI\n{'='*80}\n")
 
         response = client.chat.completions.create(
-            model="o3-mini",
+            model="gpt-4o-mini",
             messages=[
                 {
                     "role": "user",
